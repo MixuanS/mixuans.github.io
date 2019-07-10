@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jul 2019 13:06:46 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 23:27:22 +0800</lastBuildDate>
     
 	<atom:link href="https://mixuans.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://mixuans.github.io/post/test/</link>
+      <pubDate>Wed, 10 Jul 2019 23:27:22 +0800</pubDate>
+      
+      <guid>https://mixuans.github.io/post/test/</guid>
+      <description>这个另一篇测试博客</description>
+    </item>
     
     <item>
       <title>我的第一篇博客</title>
@@ -34,6 +43,32 @@
  服务注册中心，实现服务自动注册和发现，无需人为记录服务地址 服务自动订阅，服务列表自动推送，服务调用透明化，无需关心依赖关系 动态监控服务状态监控报告，人为控制服务状态  缺点：
  服务间会有依赖关系，一旦某个环节出错会影响较大 服务关系复杂，运维、测试部署困难，不符合DevOps思想  1.5.微服务 前面说的SOA，英文翻译过来是面向服务。微服务，似乎也是服务，都是对系统进行拆分。因此两者非常容易混淆，但其实缺有一些差别：
 微服务的特点：</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mixuans.github.io/post/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mixuans.github.io/post/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>安装Hugo Hugo下载地址
+下载完成后,将解压的文件放到指定目录下
+配置window环境变量
+启动cmd,使用hugo version
+使用Hugo来生成博客 这条命令是在当前路径,生成一个myblog文件夹
+hugo new site myblog  文件夹中的内容如下:
+下载并设置主题 官网主题库
+任意选择一个主题,进入
+执行克隆命令,成功导入主题
+此时主题文件夹themes中出现主题
+在本地启动个人博客 本地启动博客命令(tip:要在根目录执行这条命令)
+hugo server -t m10c --buildDrafts  实际写一篇测试文章 hugo new post/test.md  对应的目录在
+可以自行编辑这篇文章
+在执行启动命令,对应的文章已经出现在博客上了
+将个人博客部署到远端服务器上 打开git
+hugo --theme=m10c --baseUrl=&amp;quot;https://mixuans.github.io/&amp;quot; --buildDrafts  在当前目录下生成一个public文件夹
+后面需要将public提交到刚创建的仓库中
+git init //初始化 git add * // 添加到本地仓库中 git commit -m &amp;quot;提交的注释&amp;quot; // 提交的远程仓库中  git remote add orign https://github.com/Mixuans/mixuans.github.io.git // 这个对应的规则 git remote add orgin https://github.</description>
     </item>
     
   </channel>

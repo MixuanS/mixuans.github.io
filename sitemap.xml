@@ -4,19 +4,29 @@
   
   <url>
     <loc>https://mixuans.github.io/</loc>
-    <lastmod>2019-07-10T13:06:46+08:00</lastmod>
+    <lastmod>2019-07-10T23:27:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mixuans.github.io/post/</loc>
-    <lastmod>2019-07-10T13:06:46+08:00</lastmod>
+    <lastmod>2019-07-10T23:27:22+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mixuans.github.io/post/test/</loc>
+    <lastmod>2019-07-10T23:27:22+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://mixuans.github.io/post/blog/</loc>
     <lastmod>2019-07-10T13:06:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mixuans.github.io/post/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
