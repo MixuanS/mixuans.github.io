@@ -1,0 +1,131 @@
+## 安装Hugo
+
+[Hugo下载地址](https://github.com/gohugoio/hugo/releases)
+
+下载完成后,将解压的文件放到指定目录下
+
+![1562771331338](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562771331338.png)
+
+配置window环境变量
+
+![1562771414135](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562771414135.png)
+
+ 
+
+启动`cmd`,使用`hugo version`
+
+![1562771587862](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562771587862.png)
+
+
+
+## 使用Hugo来生成博客
+
+这条命令是在当前路径,生成一个`myblog`文件夹
+
+```
+hugo new site myblog
+```
+
+文件夹中的内容如下:
+
+![1562771734130](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562771734130.png)
+
+## 下载并设置主题
+
+[官网主题库](https://themes.gohugo.io/)
+
+任意选择一个主题,进入
+
+![1562772046209](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772046209.png)
+
+
+
+执行克隆命令,成功导入主题
+
+![1562772154415](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772154415.png)
+
+此时主题文件夹themes中出现主题
+
+![1562772236369](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772236369.png)
+
+
+
+## 在本地启动个人博客
+
+本地启动博客命令(tip:要在根目录执行这条命令)
+
+```
+hugo server -t m10c --buildDrafts
+```
+
+
+
+## 实际写一篇测试文章
+
+```
+hugo new post/test.md
+```
+
+![1562772461577](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772461577.png)
+
+对应的目录在
+
+![1562772549225](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772549225.png)
+
+可以自行编辑这篇文章
+
+
+
+在执行启动命令,对应的文章已经出现在博客上了
+
+![1562772677540](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772677540.png)
+
+
+
+## 将个人博客部署到远端服务器上
+
+打开git
+
+![1562772925030](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562772925030.png)
+
+
+
+```
+hugo --theme=m10c --baseUrl="https://mixuans.github.io/" --buildDrafts
+```
+
+在当前目录下生成一个`public`文件夹
+
+![1562773115484](C:\Users\hechao\AppData\Roaming\Typora\typora-user-images\1562773115484.png)
+
+
+
+后面需要将public提交到刚创建的仓库中
+
+```
+git init //初始化
+git add * // 添加到本地仓库中
+git commit -m "提交的注释" // 提交的远程仓库中
+```
+
+
+
+```
+git remote add orign https://github.com/Mixuans/mixuans.github.io.git
+// 这个对应的规则
+git remote add orgin https://github.com/[用户名称]/[仓库名称].git
+```
+
+
+
+
+```
+git push -u orgin master // 这里需要输入git账号密码
+```
+
+
+
+这样一个简单的博客就搭建成功了
+
+[我的博客](https://mixuans.github.io/)
+
